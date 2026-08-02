@@ -55,6 +55,34 @@ This will:
 4. Identify lottery ticket sizes
 5. Save results to `results/lottery_hypothesis_results.json`
 
+## 📥 Getting the Data
+
+The CIFAR-10 dataset is required to run the analysis. Download it:
+
+```bash
+# Download CIFAR-10 (Python version)
+wget https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+
+# Extract to data directory
+mkdir -p data
+tar -xzf cifar-10-python.tar.gz -C data/
+
+# Clean up
+rm cifar-10-python.tar.gz
+```
+
+The script expects the data structure:
+```
+data/
+└── cifar-10-batches-py/
+    ├── data_batch_1
+    ├── data_batch_2
+    ├── test_batch
+    └── batches.meta
+```
+
+**Alternative:** Modify `load_cifar10_loader()` in `backdoor_lottery.py` to use torchvision's built-in CIFAR-10 downloader.
+
 ## 📁 Repository Structure
 
 ```
@@ -120,5 +148,3 @@ Open an issue or pull request with improvements.
 **Status**: ✅ Complete and reproducible (tested on NVIDIA L4 GPU)
 
 **Runtime**: ~10 minutes on L4 GPU, ~2-4 hours on CPU
-
-**Last Updated**: August 2, 2026
