@@ -4,7 +4,7 @@ This repository contains a reproduction of the paper **"Backdoor Mitigation via 
 
 ## 📋 Overview
 
-The paper introduces the IMS (Invertible Pruning Masks) defense against backdoor attacks. However, the defense shows different effectiveness on different attack types:
+The paper introduces IMS (Invertible Masking using Selection), a novel defense against backdoor attacks. However, the defense shows different effectiveness on different attack types:
 - **BadNets attack**: Very effective (96% → 4% ASR)
 - **Blended attack**: Partially effective (only partial reduction)
 
