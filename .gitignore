@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Large files (use LFS or download separately)
+*.pth
+*.pt
+*.tar.gz
+*.zip
+
+# Data directories (download separately)
+data/
+
+# Results cache (keep JSON but not large temp files)
+results/*.tmp
+results/*.cache
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Personal documentation (keep locally, don't push to GitHub)
+EXPLANATION.md
+IDEAS_AND_FUTURE_WORK.md
